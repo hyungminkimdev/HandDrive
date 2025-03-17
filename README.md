@@ -19,16 +19,25 @@ HandDrive is an app designed to help these individuals experience parking simula
 Through a three-stage parking simulation, users can practice driving, overcome perceived limitations, and build both understanding and confidence in their driving abilities.
 
 
-## Key Technologies
-- **ARKit**: Created an immersive driving environment that mimics real-world scenarios.
-- **Hand Gesture Recognition**:
-  - Used `hand.chirality == .left/.right` to distinguish left and right hand interactions.
-  - **Left Hand**: Implemented `HandPoseClassification` for simulating hand controller actions.
-  - **Right Hand**: Used `HandActionClassification` with `MyHandActionClassifier` for steering control.
-- **CreateML**: Trained separate machine learning models for each hand with **95%+ accuracy** using data augmentation.
-- **Responsive Design**: Developed a grid-based layout for optimal performance across iPad devices, from iPad Air to iPad Pro.
-- **User Flow**: Designed a clear progression—`Start > Story > Walkthrough > Main > Ending`—using modals and animations for intuitive guidance.
-- **AI-Assisted Development**: Utilized **ChatGPT** to review code and ensure reliability.
+## Key Technologies & Implementations
+
+### **Augmented Reality (AR) Development**  
+- **ARKit**: Built an immersive AR driving simulation that mirrors real-world scenarios, enhancing user engagement and realism.  
+
+### ✋ **Hand Gesture Recognition**  
+- **Chirality Detection**: Differentiated left and right hand interactions using `hand.chirality == .left/.right`.  
+- **Left Hand (Steering Control)**:  
+  - Implemented `HandPoseClassification` to simulate natural hand controller movements.  
+- **Right Hand (Acceleration & Braking Control)**:  
+  - Utilized `HandActionClassification` with a custom model, `MyHandActionClassifier`, for accurate motion control.  
+
+### **Machine Learning Optimization**  
+- **CreateML**: Trained distinct models for each hand gesture with over **95% accuracy** through data augmentation techniques, ensuring reliability across diverse conditions.  
+
+### **Responsive Design & User Experience**  
+- Developed a **grid-based layout** optimized for various iPad devices, from Air to Pro, ensuring consistent performance and user comfort.  
+- Crafted a seamless **user journey**—`Start > Story > Walkthrough > Main > Ending`—enhanced with modals and smooth animations for intuitive navigation.  
+
 
 <!--
 ## Video
