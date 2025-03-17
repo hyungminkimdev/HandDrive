@@ -4,24 +4,31 @@
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/a8bbf0b2-56b6-4cad-8fc1-8ef513cdce51" width="250"/>
-
-  <br/><br/>
-  
-  <img src="https://github.com/user-attachments/assets/ceb5f0d6-837d-4b93-9ea0-1826b3578bd1" width="590"/>
-  <img src="https://github.com/user-attachments/assets/fb56622c-0b33-484e-902e-d5973cf03513" width="330"/>
 </div>
 
 
 ## About the Project
-> 'MementoMusica' is an interactive app that helps a protagonist, who is gradually losing memories due to dementia, hold onto precious moments by allowing users to play meaningful music for them.
+> This app, 'HandDrive', encourages driving for individuals with lower-body paralysis by using AR-based parking simulations to help them gain confidence and lead a more positive life.
 
-Music has always had a profound influence on our lives, often in ways we don't fully understand. I believe music holds an incredible, hidden power that can touch our emotions and memories in remarkable ways.
+Did you know that individuals with lower-body paralysis can also drive? Many people with disabilities operate vehicles using assistive hand controls to manage acceleration and braking. However, despite the technical feasibility, psychological fears and anxieties often make them hesitant to take on the challenge.
 
-Dementia is a cruel illness that can erase even the most cherished memories with loved ones. Witnessing the struggles of those affected—both patients and their families—moved me to create an app that could offer comfort and healing through the power of music.
+HandDrive is an app designed to help these individuals experience parking simulations in an AR (Augmented Reality) environment. The app utilizes machine learning technology to recognize hand movements. The left hand, when clenched into a fist, controls steering motions, while the right hand’s gestures are used to manage acceleration and braking. This setup allows users to practice driving motions naturally, just as they would with actual assistive hand controls.
 
-The story follows an aging man who slowly begins to forget the musical memories he shared with his beloved. However, as the user plays the guitar, fragments of his memories begin to resurface. This process is beautifully symbolized by Polaroid photos gradually coming into focus, representing the revival of his fading recollections.
+Through a three-stage parking simulation, users can practice driving, overcome perceived limitations, and build both understanding and confidence in their driving abilities.
 
 
+## Key Technologies
+- **ARKit**: Created an immersive driving environment that mimics real-world scenarios.
+- **Hand Gesture Recognition**:
+  - Used `hand.chirality == .left/.right` to distinguish left and right hand interactions.
+  - **Left Hand**: Implemented `HandPoseClassification` for simulating hand controller actions.
+  - **Right Hand**: Used `HandActionClassification` with `MyHandActionClassifier` for steering control.
+- **CreateML**: Trained separate machine learning models for each hand with **95%+ accuracy** using data augmentation.
+- **Responsive Design**: Developed a grid-based layout for optimal performance across iPad devices, from iPad Air to iPad Pro.
+- **User Flow**: Designed a clear progression—`Start > Story > Walkthrough > Main > Ending`—using modals and animations for intuitive guidance.
+- **AI-Assisted Development**: Utilized **ChatGPT** to review code and ensure reliability.
+
+<!--
 ## Video
 
 <div align="center">
@@ -29,14 +36,15 @@ The story follows an aging man who slowly begins to forget the musical memories 
 </div>
 
 <br/>
+-->
 
 ## Key Screenshots
 
-| **Main View** | **Story View** | **Guitar View** |
+| **Main View** | **Story View** | **Simulation View** |
 | --- | --- | --- |
-| <img src="https://github.com/user-attachments/assets/bae25d3f-1041-4882-9018-b744b76b41d2" width="300"/> | <img src="https://github.com/user-attachments/assets/57e39948-0a9e-4fe5-82ae-3e0bdabeb153" width="300"/> | <img src="https://github.com/user-attachments/assets/2e67ac75-30cc-41be-89c1-31f095b3a31d" width="300"/> |
+| <img src="https://github.com/user-attachments/assets/7c0a9ae0-f6d3-4e2b-a0ae-9b73970f65f3" width="300"/> | <img src="https://github.com/user-attachments/assets/cbaaf9e5-978d-4f93-a316-2628cab62284" width="300"/> | <img src="https://github.com/user-attachments/assets/8e6dae77-abbf-4690-87c5-350e4fbf2165" width="300"/> |
 
-
+<!--
 ## Additional Screenshots
 
 <div align="center">
@@ -47,3 +55,4 @@ The story follows an aging man who slowly begins to forget the musical memories 
   <img src="https://github.com/user-attachments/assets/88bd3552-3c15-4ce5-9615-a33fdab9a202" width="250"/>
   <img src="https://github.com/user-attachments/assets/ace4f2e5-323b-40c5-a6d7-da162364f388" width="250"/>
 </div>
+-->
