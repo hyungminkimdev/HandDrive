@@ -10,7 +10,9 @@
 ## About the Project
 > This app, 'HandDrive', encourages driving for individuals with lower-body paralysis by using AR-based parking simulations to help them gain confidence and lead a more positive life.
 
-Did you know that individuals with lower-body paralysis can also drive? Many people with disabilities operate vehicles using assistive hand controls to manage acceleration and braking. However, despite the technical feasibility, psychological fears and anxieties often make them hesitant to take on the challenge.
+Did you know that individuals with lower-body paralysis can also drive?  
+
+Many people with disabilities operate vehicles using assistive hand controls to manage acceleration and braking. However, despite the technical feasibility, psychological fears and anxieties often make them hesitant to take on the challenge.
 
 HandDrive is an app designed to help these individuals experience parking simulations in an AR (Augmented Reality) environment. The app utilizes machine learning technology to recognize hand movements. The left hand, when clenched into a fist, controls steering motions, while the right hand’s gestures are used to manage acceleration and braking. This setup allows users to practice driving motions naturally, just as they would with actual assistive hand controls.
 
