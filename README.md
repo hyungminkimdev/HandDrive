@@ -24,7 +24,7 @@ Through a three-stage parking simulation, users can practice driving, overcome p
 ### **Augmented Reality (AR) Development**  
 - **ARKit**: Built an immersive AR driving simulation that mirrors real-world scenarios, enhancing user engagement and realism.  
 
-### ✋ **Hand Gesture Recognition**  
+### **Hand Gesture Recognition**  
 - **Chirality Detection**: Differentiated left and right hand interactions using `hand.chirality == .left/.right`.  
 - **Left Hand (Steering Control)**:  
   - Implemented `HandPoseClassification` to simulate natural hand controller movements.  
